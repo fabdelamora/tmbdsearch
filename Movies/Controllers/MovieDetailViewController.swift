@@ -20,7 +20,7 @@ class MovieDetailViewController: UIViewController {
     func configureView() {
         if let movie = movie, let voteAverage = voteAverageLabel, let overView = overViewTextView, let releaseDate = releaseDateLabel {
             
-            let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark)
+            let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
             let blurEffectView = UIVisualEffectView(effect: blurEffect)
             blurEffectView.frame = view.bounds
             blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
